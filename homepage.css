@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Handlee', cursive;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(99, 67, 37, 0.507), rgba(30, 17, 4, 0.7)), url(images/mainbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+    position: relative; top: -10px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative; top: -80px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:#dbac8b;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: antiquewhite;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 90px;
+}
+.text-box p{
+    margin: 10px 0 30px;
+    font-size: 20px;
+    color:antiquewhite
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:antiquewhite;
+    border: 1px solid antiquewhite;
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(143, 115, 64);
+    background: rgb(143, 115, 64);
+    transition: 1s;
+}
+.ABOUT{
+    width: 100;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.ABOUT h1{
+    font-size: 38px;
+    color: rgb(58, 43, 24);
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.ABOUT-col{
+    flex-basis: 30%;
+    position: relative;
+    overflow: hidden;
+}
+.ABOUT-col img{
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.layer{
+    background:rgba(53, 38, 21, 0.774);
+    height: 72%;
+    width: 70%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 15%;
+}
+.layer:hover{
+    background:transparent;
+    transition: 0.6s;
+}
+.layer p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-top: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.layer:hover p{
+    opacity: 0;
+}
