@@ -5,27 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Review Page </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/3ede215751.js" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3ede215751.js" crossorigin="anonymous"></script>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    text-align: center;
+}
+.Reviews{
+    padding: 40px 0;
+    background: #CA7B42;
+    color: #521908;
+    border: 1px solid;
+    border-radius: 3%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+    
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 160px;
+    height: 5px;
+    background: #CA7B42;
+    margin: 26px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 50%;
+}
+.p{
+    background: #FEF3DF;
+    padding: 30px;
+    border-radius: 30%;
+}
+.Reviews img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.stars{
+    color:#FFD700;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+.col{
+    flex: 100%;
+    max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+    </style>
 </head>
 <body>
 
     <div class="banner">
         <div class="inner">
-            <h1> Reviews </h1>
+            <h1> Reviews </h1> 
         <div class="border"> </div>
 
 
         <div class="row">
             <div class="col">
                 <div class="Reviews">
-                    <img src="person1.png"> alt=" ">
-                    <div class="stars"></div>
-                        <i class="far fa-star"></i>
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p4.png" alt=" ">
+                    <div class="name"> Franc Dustin Ramirez Egos</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </div>
+                    <p> This pastry shop is a hidden gem! From the moment you walk in, the aroma of freshly baked goodies wraps around you like a warm hug. The pastries are not just visually appealing; they are pure bliss for your taste buds. Each bite is a delightful experience of flavors dancing in perfect harmony. The variety is impressive, and the quality is consistently top-notch. The staff's friendliness adds an extra layer of sweetness to the whole experience. Hands down, a 5-star haven for pastry lovers!  </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p2.png" alt=" ">
+                    <div class="name"> Alexis Cato</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p3.png" alt=" ">
+                    <div class="name"> Jthird Locsin Sadje </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                 </div>
             </div>
         </div>
+        </div>
     </div>
-    
+           
 </body>
 </html>
