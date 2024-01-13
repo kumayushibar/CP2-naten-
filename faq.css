@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(99, 67, 37, 0.507), rgba(30, 17, 4, 0.7)), url(mainbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Handlee', cursive; 
+    color: antiquewhite;
+}
+
+    
+
+.faq-container {
+    max-width: 1,500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: linear-gradient(rgba(99, 67, 37, 0.507), rgba(30, 17, 4, 0.7)), url(mainbg.jpg) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+p {
+    margin-top: 5px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+.faq-item {
+    position: relative; 
+}
+.faq-item p {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faq-item:hover {
+    background-color: grey;
+}
+
+.faq-item:hover p {
+    opacity: 1; 
+}
+.faq-container:hover .faq-item:not(:hover) p {
+    opacity: 0;
+}
+
