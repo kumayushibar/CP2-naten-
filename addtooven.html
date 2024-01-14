@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('mainbg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: calc(50% - 20%);
+            left: calc(50% - 20%);
+            width: 40%;
+            height: 40%;
+            background-color: #A67B5B;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            
+        }
+
+        .overlayText {
+            font-size: 45px;
+            color: whitesmoke;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .product {
+            background-color: #D2B48C; /* Light brown color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2, p {
+            color: #fff;
+        }
+
+        #addtoOven {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #8B4513; /* Brown color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #6B3E0E; /* Darker brown on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <h2>Product Name</h2>
+        <p>Product description goes here.</p>
+        <button id="addtoOven">Add to Oven</button>
+    </div>
+   
+    <div class="overlay" id="overlay" style="display: none;">
+        <div class="overlayText ">
+             <strong class="sweet">Sweet!</strong> Added to oven!</div>
+    </div>
+   
+   <script>
+        document.getElementById('addtoOven').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'flex';
+            setTimeout(function() {
+                document.getElementById('overlay').style.display = 'none';
+                window.location.href = 'homepage.html'; 
+            }, 2000);
+        });
+    </script>
+
+ </body>
+</html>
