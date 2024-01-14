@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="faq.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <title>FAQ Page</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(LOGO.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #dbac8b;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(99, 67, 37, 0.507), rgba(30, 17, 4, 0.7)), url(bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Handlee', cursive; 
+    color: antiquewhite;
+}
+
+    
+
+.faq-container {
+    max-width: 1,500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: linear-gradient(rgba(99, 67, 37, 0.507), rgba(30, 17, 4, 0.7)), url(mainbg.jpg) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+p {
+    margin-top: 5px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+.faq-item {
+    position: relative; 
+}
+.faq-item p {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faq-item:hover {
+    background-color: grey;
+}
+
+.faq-item:hover p {
+    opacity: 1; 
+}
+.faq-container:hover .faq-item:not(:hover) p {
+    opacity: 0;
+}
+
+</style>
+
+</head>
+<body>
+    <div class banner>
+        <div class="navbar">
+            <img src="LOGO.png" class="logo">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="homepage.html"> Homepage</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <h2>What types of pastries do you sell?</h2>
+        <p>We offer various types of pastries for you customers to enjoy!
+            these include churros, cookies, cake, croissants and so much more!
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Business Hours?</h2>
+        <p>We are open at 7-10pm Mondays-Sundays.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>What's different in your pastries?</h2>
+        <p>          Each pastry at Harana is a story waiting to be shared. Our bakers draw inspiration for 
+            creating a diverse menu that caters to different tastes and preferences.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h2>Do you accept custom pastries for occasions?</h2>
+        <p>         Yes we do! here at Harana we make sure that your occasions
+                    will always be special!
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h2>       Do you offer gluta-free or vegan menu?</h2>
+        <p>While we are mostly using traditional ingredients,
+            we are actively exploring for gluta free and vegan alternatives!
+            stay tuned!
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Are you available for delivery or pickup?</h2>
+        <p>Yes you can place an order for delivery to enjoy your pastries at the comfort of your homepage
+            or place a pickup and skip lines of waiting!
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Is the food clean and safe?</h2>
+        <p>At Harana, we prioritize the cleanliness and safety of our food. 
+            We adhere to strict hygiene standards in the preparation, handling, and storage of our ingredients.
+             Our kitchen is regularly sanitized, and we follow rigorous protocols to maintain a clean and safe environment.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Is the staff friendly?</h2>
+        <p>At Harana, our staff is dedicated to providing a warm and welcoming experience. You can expect friendly and genuine interactions,
+             whether you're a regular customer or a first-time visitor. You are always welcome! 
+             </p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Does the store allow pets?</h2>
+        <p>Yes, at Harana, we welcome well-behaved pets in our pet-friendly establishment. We understand that pets are part of the family, 
+            and we want you to enjoy our pastries with your furry companions! </p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Do you offer beverages?</h2>
+        <p>While we do take pride for our pastries we also offer beverages! a cup of coffee to start your display
+            or maybe a relaxing sweet afternoon tea? we got you covered! </p>
+    </div>
+</body>
+</html>
