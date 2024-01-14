@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <title>HARANA PASTRY</title>
+    <link href="homepage.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ede215751.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat", sans-serif;
+            text-align: center;
+            background-color: #fdefcc;
+        }
+
+        .Reviews {
+            padding: 40px 0;
+            background: #fdefcc;
+            color: #000000;
+            border: 1px solid;
+            border-radius: 3%;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+            background: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        .border {
+            width: 160px;
+            height: 5px;
+            background: #CA7B42;
+            margin: 26px auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        .p {
+            background: #FEF3DF;
+            padding: 30px;
+            border-radius: 30%;
+            overflow: auto;
+        }
+
+        .Reviews img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 80%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="homepage.html"><img src="images/LOGO.png"></a>
+            <div class=" nav-links">
+                <ul>
+                    <li><a href="about us.html">Company</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Harana Pastry</h1>
+            <p>Harina. Hali Na!</p>
+            <a href="products.html" class="hero-btn">ORDER NOW!</a>
+        </div>
+    </section>
+
+    <section class="ABOUT">
+        <h1> HARANA'S BEST SELLER </h1>
+
+        <div class="row">
+            <div class="ABOUT-col">
+                <img src="images/vanilla glazed, pomelo topped coccini cake.jpg">
+                <div class="layer">
+                    <p>Vanilla glazed, pomelo topped coccini cake</p>
+                </div>
+            </div>
+           
+
+</div>
+                    <div class="ABOUT-col">
+                        <img src="images/chocolate-filled banana sliced bread.jpg">
+                            <div class="layer">
+                            <p>Chocolate-filled banana sliced bread </p>
+                        </div>
+                    </div>
+
+<div class="ABOUT-col">
+                        <img src="images/dobz's churos bite.jpg">
+                            <div class="layer">
+                            <p>Dobz's churos bite</p>
+                        </div>
+                    </div>
+
+<div class="ABOUT-col">
+                        <img src="images/mango-filled lepidoptera pie.jpg">
+                            <div class="layer">
+                                <p>Mango-filled Lepidoptera pie </p>
+                            </div>                            
+                    </div>
+
+
+        </div>
+    </section>
+
+    <div class="banner">
+        <div class="inner">
+            <h1> Reviews </h1>
+            <div class="border"> </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="Reviews">
+                        <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p4.png" alt=" ">
+                        <div class="name"> David Doblon</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p> This pastry shop is a hidden gem! From the moment you walk in, the aroma of freshly baked goodies wraps around you like a warm hug. The pastries are not just visually appealing; they are pure bliss for your taste buds. Each bite is a delightful experience of flavors dancing in perfect harmony. The variety is impressive, and the quality is consistently top-notch. ヾ(≧▽≦*)o </p>
+                    </div>
+                </div>
+                
+<div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p2.png" alt=" ">
+                    <div class="name"> Hailey Saydoquen</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <p> This shop is highly recommended for those people who love different types of bread because it contains a variety of bread. I love the croissants from this shop and I also love the bread toast. The staff's friendliness adds an extra layer of sweetness to the whole experience. Hands down, a 5-star haven for pastry lovers! However, some flavors of the pastry are not included, I hope they include some flavors soon like matcha 😍🥰🥰. </p>
+                </div>
+            </div>
+
+<div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p3.png" alt=" ">
+                    <div class="name"> Aphelios Camasis </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p> I am amazed by the quality of the pastries themselves. Despite being delivered to my doorstep, each bread tasted as if it had just been freshly baked. The packaging was very secure keeping the bread safe. The packaging is not only visually appealing but also ensured that every pastry arrived in pristine condition. And I can tell that this shop uses high quality ingredients. The best 🤩🤩!! </p>
+                </div>
+            </div>
+
+<div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p5.png" alt=" ">
+                    <div class="name"> Yeisha Belgica </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p> Food was great and the staff was friendly as well!,  great facilities with priority to PWD, very student friendly and overall really cozy place. 10/10 will be back for more  (●'◡'●)!! </p>
+                </div>
+            </div>
+
+<div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p6.png" alt=" ">
+                    <div class="name"> Casper P. Lirio  </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p> Their bread  is delicious and very tasty I highly recommend this shop since its very worth it  for its price what i love the most is that it is perfect to combine with coffee.😋👌 </p>
+                </div>
+            </div>
+
+<div class="col">
+                <div class="Reviews">
+                    <img src="C:\Users\iboyd\OneDrive\Desktop\testing\p7.png" alt=" ">
+                    <div class="name"> Paul George Deodato   </div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p> First of all, the place has a very aesthetic vibe, with chill music and pleasing lightings . Good furnitures and also free and fast internet connection !!, foods were great and very worth the money. ヾ(^▽^*)))</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
