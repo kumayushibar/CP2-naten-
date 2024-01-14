@@ -151,3 +151,37 @@ font-size: larger;
     border-radius: 50%;
     font-size: 22px;
 }
+.navbar {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 35px 0;
+    display: block;
+    align-items: start;
+    justify-content: none;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #CA7B42;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
